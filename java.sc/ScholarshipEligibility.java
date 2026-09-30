@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class ScholarshipEligibility {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter student name:");
+        String name = sc.nextLine();
+        System.out.print("Enter your marks:");
+        int marks = sc.nextInt();
+        if (marks >= 75) {
+            System.out.println(name + ": Eligible for scholarship");
+        } else {
+            System.out.println(name + ": Not eligible for scholarship");
+        }
+        sc.close();
+    }
+}
